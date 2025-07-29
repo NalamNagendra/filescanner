@@ -2,6 +2,17 @@
 
 A full-stack application that allows users to upload files, scan them for potential malware, and view the results in a real-time dashboard.
 
+<img width="1908" height="938" alt="Screenshot 2025-07-29 234923" src="https://github.com/user-attachments/assets/1341819a-10ee-4542-94b4-6c0e89a70bea" />
+
+<img width="1856" height="561" alt="Screenshot 2025-07-29 234943" src="https://github.com/user-attachments/assets/c487c7cd-4fe6-4e97-b936-2d55eaf4e868" />
+
+<img width="1770" height="856" alt="Screenshot 2025-07-29 235121" src="https://github.com/user-attachments/assets/a73ab987-6521-43ad-abce-1b0ee8b80c1c" />
+
+
+<img width="1708" height="750" alt="Screenshot 2025-07-29 235133" src="https://github.com/user-attachments/assets/9f0d0cd1-d7f8-468f-a95f-98d518f3a5bd" />
+
+<img width="1775" height="963" alt="Screenshot 2025-07-29 235156" src="https://github.com/user-attachments/assets/1e313153-0c9d-48c2-836d-ffccfe7a025d" />
+
 ## Features
 
 - File upload with drag & drop support

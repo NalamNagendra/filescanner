@@ -1,0 +1,228 @@
+/* Enhanced Global Styles */
+:root {
+  --primary-color: #3f51b5;
+  --secondary-color: #6b8cae;
+  --success-color: #4caf50;
+  --info-color: #2196f3;
+  --warning-color: #ff9800;
+  --danger-color: #f44336;
+  --warning-color: #ff9800;
+  --light-bg: #f8f9fa;
+  --dark-bg: #2c3e50;
+  --text-color: #333;
+  --text-light: #666;
+  --white: #fff;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-bg);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #303f9f;
+  border-color: #303f9f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem;
+  transition: var(--transition);
+}
+
+.badge-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.badge-clean {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge-infected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* File List */
+.file-list-container {
+  background: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+.file-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.file-list thead th {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.file-list tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.file-list tbody tr:last-child {
+  border-bottom: none;
+}
+
+.file-list tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.file-list td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.file-list tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* File Upload */
+.upload-area {
+  border: 2px dashed var(--border-color);
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  transition: var(--transition);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  border-color: var(--primary-light);
+  background-color: rgba(74, 111, 165, 0.03);
+}
+
+.upload-area.active {
+  border-color: var(--primary-color);
+  background-color: rgba(74, 111, 165, 0.05);
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .file-list {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
